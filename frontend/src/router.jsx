@@ -28,7 +28,7 @@ const router = createBrowserRouter([
             element: <CreatePost />
          },
          {
-            path: '/edit',
+            path: '/edit/:post_id',
             element: <EditPost />
          },
          // {

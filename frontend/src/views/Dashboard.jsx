@@ -105,7 +105,7 @@ const Dashboard = () => {
                                  <td className="px-3 py-4">{post.category.category_name}</td>
                                  <td className="px-3 py-4">
                                     <div className="flex justify-start">
-                                       <TButton to="/edit" add_classes="mx-1">
+                                       <TButton to={`edit/${post.id}`} add_classes="mx-1">
                                           Edit Post
                                        </TButton>
 

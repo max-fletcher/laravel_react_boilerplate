@@ -27,6 +27,8 @@ Route::get('/logout', [AuthController::class, 'logout']);
 
 Route::get('/posts/index', [PostController::class, 'index']);
 Route::post('/posts/store', [PostController::class, 'store']);
+Route::get('/posts/show/{post_id}', [PostController::class, 'show']);
+Route::patch('/posts/update/{post_id}', [PostController::class, 'update']);
 Route::delete('/posts/delete/{post_id}', [PostController::class, 'delete']);
 
 Route::get('/categories/index', [CategoryController::class, 'index']);
